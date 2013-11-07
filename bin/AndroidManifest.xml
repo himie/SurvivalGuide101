@@ -31,11 +31,11 @@
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".MostrarDatos"
+            android:name=".MostrarLugares"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".Remedios"
+            android:name=".MostrarRemedio"
             android:label="@string/app_name" >
         </activity>
         <activity
@@ -47,7 +47,7 @@
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name=".Imagenes"
+            android:name=".Mapas"
             android:label="@string/app_name" >
         </activity>
         <activity
