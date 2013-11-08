@@ -33,6 +33,11 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
+            android:name=".VerLugar"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
             android:name=".ListarRemedios"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
@@ -43,7 +48,7 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".VerLugar"
+            android:name=".ListarBookmarks"
             android:label="@string/app_name" 
             android:screenOrientation="portrait">
         </activity>
@@ -62,7 +67,7 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.urbanjungle.survivalguide101.Ciudades" 
+            android:name="com.urbanjungle.survivalguide101.SeleccionarCiudad" 
             android:label="@string/app_name" 
             android:screenOrientation="portrait">
             <intent-filter>

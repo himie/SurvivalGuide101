@@ -72,4 +72,22 @@
         android:text="Medium Text"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtSubTit"
+        android:layout_alignBottom="@+id/txtSubTit"
+        android:layout_alignParentRight="true"
+        android:text="Agregar" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnAdd"
+        android:layout_alignBottom="@+id/btnAdd"
+        android:layout_alignLeft="@+id/btnAdd"
+        android:text="Quitar" />
+
 </RelativeLayout>

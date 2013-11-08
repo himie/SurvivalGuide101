@@ -36,4 +36,21 @@
         android:text="Remedio"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtImagen"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="18dp"
+        android:text="Agregar" />
+
+    <Button
+        android:id="@+id/bttnQuitar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtSubTit"
+        android:layout_alignRight="@+id/btnAgregar"
+        android:text="Quitar" />
+
 </RelativeLayout>
