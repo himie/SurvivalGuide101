@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:installLocation="auto"
     package="com.urbanjungle.survivalguide101"
     android:versionCode="1"
     android:versionName="1.0" >
@@ -15,11 +16,15 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.urbanjungle.survivalguide101.Home"
-            android:label="@string/app_name" >
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name="com.urbanjungle.survivalguide101.SplashScreen"
-            android:label="@string/app_name" >
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+            <meta-data android:name="AA_DB_NAME" android:value="database.sqlite" />
+			<meta-data android:name="AA_DB_VERSION" android:value="1" />
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,39 +33,47 @@
         </activity>
         <activity
             android:name=".Salud"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".MostrarLugares"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".MostrarRemedio"
-            android:label="@string/app_name" >
+            android:name=".MostrarRemedios"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".Remedio"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".InformacionLugar"
-            android:label="@string/app_name" >
+            android:name=".Lugar"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".VerMapa"
+            android:label="@string/app_name">
         </activity>
         <activity
             android:name=".Mapas"
-            android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name=".Transporte"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".Traducciones"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".Ciudades"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
         </activity>
     </application>
 

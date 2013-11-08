@@ -7,5 +7,6 @@
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK/android-support-v7-gridlayout"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="lib" path="/Volumes/NO NAME/ActiveAndroid-master/dist/ActiveAndroid.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>
