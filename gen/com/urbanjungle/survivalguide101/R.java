@@ -28,15 +28,15 @@ public final class R {
         public static final int peligroso_1=0x7f020004;
         public static final int sf=0x7f020005;
         public static final int soslatino=0x7f020006;
-        public static final int soslatino06=0x7f020007;
-        public static final int soslatinocopia=0x7f020008;
+        public static final int soslatino04=0x7f020007;
+        public static final int soslatino06=0x7f020008;
         public static final int splashimage=0x7f020009;
     }
     public static final class id {
         public static final int TextView01=0x7f080006;
         public static final int action_settings=0x7f080011;
-        public static final int btnLA=0x7f080000;
-        public static final int btnSF=0x7f080001;
+        public static final int btnLA=0x7f080001;
+        public static final int btnSF=0x7f080000;
         public static final int imgImagen=0x7f08000f;
         public static final int lstHome=0x7f080003;
         public static final int lstTraducc=0x7f080005;
@@ -55,13 +55,12 @@ public final class R {
     public static final class layout {
         public static final int activity_cities=0x7f030000;
         public static final int activity_home=0x7f030001;
-        public static final int activity_splash=0x7f030002;
-        public static final int activity_traduccion=0x7f030003;
-        public static final int datos=0x7f030004;
-        public static final int datoslugares=0x7f030005;
-        public static final int imagenes=0x7f030006;
-        public static final int item_elemento=0x7f030007;
-        public static final int item_traduccion=0x7f030008;
+        public static final int activity_traduccion=0x7f030002;
+        public static final int datos=0x7f030003;
+        public static final int datoslugares=0x7f030004;
+        public static final int imagenes=0x7f030005;
+        public static final int item_elemento=0x7f030006;
+        public static final int item_traduccion=0x7f030007;
     }
     public static final class menu {
         public static final int home=0x7f070000;

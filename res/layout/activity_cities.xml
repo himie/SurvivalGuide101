@@ -5,15 +5,6 @@
     android:background="@drawable/soslatino" >
 
     <ImageView
-        android:id="@+id/btnLA"
-        android:layout_width="120pt"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/btnSF"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="34dp"
-        android:src="@drawable/la" />
-
-    <ImageView
         android:id="@+id/btnSF"
         android:layout_width="120pt"
         android:layout_height="wrap_content"
@@ -21,5 +12,13 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="53dp"
         android:src="@drawable/sf" />
+
+    <ImageView
+        android:id="@+id/btnLA"
+        android:layout_width="2350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnSF"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/soslatino04" />
 
 </RelativeLayout>
