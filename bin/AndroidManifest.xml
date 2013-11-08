@@ -10,10 +10,13 @@
         android:targetSdkVersion="18" />
 
     <application
-        android:allowBackup="true"
+       	android:name="com.activeandroid.app.Application"
+       	android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        <meta-data android:name="AA_DB_NAME" android:value="database.sqlite" />
+		<meta-data android:name="AA_DB_VERSION" android:value="1" />
         <activity
             android:name="com.urbanjungle.survivalguide101.Home"
             android:label="@string/app_name" 
@@ -37,12 +40,12 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".MostrarLugares"
+            android:name=".ListarLugares"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".MostrarRemedios"
+            android:name=".ListarRemedios"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
         </activity>
@@ -52,7 +55,7 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".Lugar"
+            android:name=".VerLugar"
             android:label="@string/app_name" 
             android:screenOrientation="portrait">
         </activity>
@@ -66,7 +69,7 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".Traducciones"
+            android:name=".ListarTraducciones"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
         </activity>
