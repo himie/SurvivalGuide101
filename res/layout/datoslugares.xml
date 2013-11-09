@@ -76,8 +76,8 @@
         android:id="@+id/btnAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/txtSubTit"
-        android:layout_alignBottom="@+id/txtSubTit"
+        android:layout_alignBaseline="@+id/txtAddr"
+        android:layout_alignBottom="@+id/txtAddr"
         android:layout_alignParentRight="true"
         android:text="Agregar" />
 
@@ -85,9 +85,9 @@
         android:id="@+id/btnDelete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/btnAdd"
-        android:layout_alignBottom="@+id/btnAdd"
-        android:layout_alignLeft="@+id/btnAdd"
+        android:layout_alignBaseline="@+id/txtImagen"
+        android:layout_alignBottom="@+id/txtImagen"
+        android:layout_alignParentRight="true"
         android:text="Quitar" />
 
 </RelativeLayout>
