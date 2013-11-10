@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     android:installLocation="auto"
-    android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+    android:theme="@android:style/Theme.NoTitleBar"
     package="com.urbanjungle.survivalguide101"
     android:versionCode="1"
     android:versionName="1.0" >
@@ -21,70 +21,84 @@
         <activity
             android:name="com.urbanjungle.survivalguide101.Home"
             android:label="@string/app_name" 
+            android:theme="@android:style/Theme.NoTitleBar"
             android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".Salud"
             android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar"
             android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".ListarLugares"
             android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar"
             android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".VerLugar"
             android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar"
             android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".ListarRemedios"
             android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar"
             android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".VerRemedio"
             android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar"
             android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".ListarBookmarks"
             android:label="@string/app_name" 
+            android:theme="@android:style/Theme.NoTitleBar"
             android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".VerMapa"
+            android:theme="@android:style/Theme.NoTitleBar"
             android:label="@string/app_name">
         </activity>
         <activity
             android:name=".Mapas"
             android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar"
             android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".ListarTraducciones"
             android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar"
             android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".ListarDerechos"
             android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar"
             android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".Asistencia"
             android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar"
             android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".VerDerecho"
             android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" 
             android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.urbanjungle.survivalguide101.SeleccionarCiudad" 
             android:label="@string/app_name" 
+            android:theme="@android:style/Theme.NoTitleBar" 
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
