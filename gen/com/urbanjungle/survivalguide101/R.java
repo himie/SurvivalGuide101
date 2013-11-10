@@ -273,8 +273,8 @@ containing a value of this type.
         public static final int txtEspanol=0x7f040026;
         public static final int txtEspecialidad=0x7f040021;
         public static final int txtImagen=0x7f04001b;
+        public static final int txtInfo=0x7f04001a;
         public static final int txtIngl=0x7f040016;
-        public static final int txtSubTit=0x7f04001a;
         public static final int txtTelefono=0x7f040022;
         public static final int vertical=0x7f040001;
     }

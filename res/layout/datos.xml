@@ -7,8 +7,8 @@
         android:id="@+id/txtDescr"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignLeft="@+id/txtSubTit"
-        android:layout_below="@+id/txtSubTit"
+        android:layout_alignLeft="@+id/txtInfo"
+        android:layout_below="@+id/txtInfo"
         android:layout_marginTop="24dp"
         android:text="Medium Text"
         android:textAppearance="?android:attr/textAppearanceMedium"
@@ -20,13 +20,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/txtSubTit"
+        android:layout_alignRight="@+id/txtInfo"
         android:layout_marginTop="34dp"
         android:text="Large Text"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
-        android:id="@+id/txtSubTit"
+        android:id="@+id/txtInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -49,7 +49,7 @@
         android:id="@+id/bttnQuitar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/txtSubTit"
+        android:layout_above="@+id/txtInfo"
         android:layout_alignRight="@+id/btnAgregar"
         android:text="Quitar" />
 

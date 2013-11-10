@@ -68,6 +68,21 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
+            android:name=".ListarDerechos"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Asistencia"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".VerDerecho"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
             android:name="com.urbanjungle.survivalguide101.SeleccionarCiudad" 
             android:label="@string/app_name" 
             android:screenOrientation="portrait">

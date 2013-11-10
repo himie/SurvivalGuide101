@@ -15,7 +15,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
-        android:id="@+id/txtSubTit"
+        android:id="@+id/txtInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/txtImagen"
@@ -28,8 +28,8 @@
         android:id="@+id/txtAddr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/txtSubTit"
-        android:layout_below="@+id/txtSubTit"
+        android:layout_alignLeft="@+id/txtInfo"
+        android:layout_below="@+id/txtInfo"
         android:layout_marginLeft="22dp"
         android:text="Medium Text"
         android:textAppearance="?android:attr/textAppearanceMedium" />
@@ -38,7 +38,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/txtSubTit"
+        android:layout_alignLeft="@+id/txtInfo"
         android:layout_below="@+id/txtAddr"
         android:layout_marginTop="14dp"
         android:text="Telefono"

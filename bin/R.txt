@@ -60,8 +60,8 @@ int id txtDescr 0x7f040019
 int id txtEspanol 0x7f040026
 int id txtEspecialidad 0x7f040021
 int id txtImagen 0x7f04001b
+int id txtInfo 0x7f04001a
 int id txtIngl 0x7f040016
-int id txtSubTit 0x7f04001a
 int id txtTelefono 0x7f040022
 int id vertical 0x7f040001
 int layout activity_cities 0x7f030000
