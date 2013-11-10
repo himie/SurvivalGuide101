@@ -3,25 +3,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fondorow" />
+
     <TextView
         android:id="@+id/txtImagen"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="17dp"
-        android:layout_marginTop="21dp"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
         android:text="Large Text"
+        android:textColor="#FFFFFFFF"
         android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <TextView
-        android:id="@+id/txtInfo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/txtImagen"
-        android:layout_below="@+id/txtImagen"
-        android:layout_marginLeft="18dp"
-        android:text="Small Text"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>
