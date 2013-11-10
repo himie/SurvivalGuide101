@@ -1,93 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout3"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    android:background="@drawable/fondostandard"
+    android:orientation="vertical"
+    tools:context=".Home" >
 
-    <TextView
-        android:id="@+id/txtImagen"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="17dp"
-        android:layout_marginTop="21dp"
-        android:text="Salud Cardiovascular"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imgBanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:clickable="false"
+            android:scaleType="fitStart"
+            android:src="@drawable/headerlugar" />
+
+        <TextView
+            android:id="@+id/txtImagen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF029A8C"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </RelativeLayout>
 
     <TextView
-        android:id="@+id/txtInfo"
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/txtImagen"
-        android:layout_below="@+id/txtImagen"
-        android:layout_marginTop="25dp"
-        android:text="Dirección"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:text="  "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="10sp" />
 
-    <TextView
-        android:id="@+id/txtAddr"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/txtInfo"
-        android:layout_below="@+id/txtInfo"
-        android:layout_marginLeft="22dp"
-        android:text="Medium Text"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="415dp"
+        android:background="#CC000000" >
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/txtInfo"
-        android:layout_below="@+id/txtAddr"
-        android:layout_marginTop="14dp"
-        android:text="Telefono"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+            android:id="@+id/txtInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Dirección"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFB3B3B3" />
 
-    <TextView
-        android:id="@+id/txtEspecialTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_below="@+id/textView2"
-        android:layout_marginTop="30dp"
-        android:text="Especialidad"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+            android:id="@+id/txtAddr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtInfo"
+            android:layout_below="@+id/txtInfo"
+            android:layout_marginLeft="22dp"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFB3B3B3" />
 
-    <TextView
-        android:id="@+id/txtEspecialidad"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/txtAddr"
-        android:layout_below="@+id/txtEspecialTitle"
-        android:text="Especialidad"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtInfo"
+            android:layout_below="@+id/txtAddr"
+            android:layout_marginTop="14dp"
+            android:text="Telefono"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFB3B3B3" />
 
-    <TextView
-        android:id="@+id/txtTelefono"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/txtEspecialTitle"
-        android:layout_toRightOf="@+id/txtAddr"
-        android:text="Medium Text"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+            android:id="@+id/txtEspecialTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="30dp"
+            android:text="Especialidad"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFB3B3B3" />
 
-    <Button
-        android:id="@+id/btnAdd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/txtAddr"
-        android:layout_alignBottom="@+id/txtAddr"
-        android:layout_alignParentRight="true"
-        android:text="Agregar" />
+        <TextView
+            android:id="@+id/txtEspecialidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/txtAddr"
+            android:layout_below="@+id/txtEspecialTitle"
+            android:text="Especialidad"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFB3B3B3" />
 
-    <Button
-        android:id="@+id/btnDelete"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/txtImagen"
-        android:layout_alignBottom="@+id/txtImagen"
-        android:layout_alignParentRight="true"
-        android:text="Quitar" />
+        <TextView
+            android:id="@+id/txtTelefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txtEspecialTitle"
+            android:layout_toRightOf="@+id/txtAddr"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFB3B3B3" />
 
-</RelativeLayout>
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtAddr"
+            android:layout_alignBottom="@+id/txtAddr"
+            android:layout_alignParentRight="true"
+            android:text="Agregar" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Quitar" />
+    </RelativeLayout>
+
+</LinearLayout>

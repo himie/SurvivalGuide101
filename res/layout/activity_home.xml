@@ -3,7 +3,7 @@
     android:id="@+id/LinearLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondociudades"
+    android:background="@drawable/fondostandard"
     android:orientation="vertical"
     tools:context=".Home" >
 
@@ -22,6 +22,7 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="5sp"
         android:text="  "
         android:textAppearance="?android:attr/textAppearanceMedium" />
 

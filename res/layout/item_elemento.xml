@@ -3,22 +3,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/fondorow" />
-
     <TextView
         android:id="@+id/txtImagen"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="35dp"
+        android:layout_height="70dp"
+        android:background="@drawable/fondorow"
+        android:paddingBottom="10dp"
         android:gravity="center"
-        android:text="Large Text"
-        android:textColor="#FFFFFFFF"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textSize="18sp"
+        android:text="Hospital 01"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFFFF" />
 
 </RelativeLayout>
