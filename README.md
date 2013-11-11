@@ -1,4 +1,10 @@
-survivalguide101
+S.O.S. Latino
 ================
 
 Repository for the Americas Datafest 2013 android app of team Urban Jungle.
+
+App has gone through a rebranding.
+
+Project Page:
+
+http://www.americas.datafest.net/a/datafest.net/americasdatafest/resources/project-list/survival-guide-101
