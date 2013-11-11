@@ -11,3 +11,8 @@ http://www.americas.datafest.net/a/datafest.net/americasdatafest/resources/proje
 
 
 Download our APK: http://alpha.chi.itesm.mx/SurvivalGuide101/SurvivalGuide101.apk
+
+Technical notes
+================
+For the offline maps feature in “Ubícate” you need to have the maps inside your SD Card. This is because of the maps big size. To make it flexible to the user and considering APK size limits in the Google Play Store, the maps will be provided via APK Expansion Files.
+
