@@ -21,15 +21,38 @@
             android:scaleType="fitStart"
             android:src="@drawable/headerlugar" />
 
-        <TextView
-            android:id="@+id/txtImagen"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="#FF029A8C"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:text="Large Text"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:id="@+id/btnHomeLugar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@drawable/homeazul" />
+
+            <TextView
+                android:id="@+id/txtImagen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal|center"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FF029A8C" />
+
+            <ImageView
+                android:id="@+id/imgBookmark"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/bookmarkvacio" />
+        </LinearLayout>
 
     </RelativeLayout>
 
@@ -108,21 +131,6 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="#FFB3B3B3" />
 
-        <Button
-            android:id="@+id/btnAdd"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/txtAddr"
-            android:layout_alignBottom="@+id/txtAddr"
-            android:layout_alignParentRight="true"
-            android:text="Agregar" />
-
-        <Button
-            android:id="@+id/btnDelete"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:text="Quitar" />
     </RelativeLayout>
 
 </LinearLayout>

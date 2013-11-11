@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/LinearLayout3"
+    android:id="@+id/LinearLayout5"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondostandard"
@@ -12,7 +12,7 @@
         android:layout_height="wrap_content" >
 
         <ImageView
-            android:id="@+id/imgBanner"
+            android:id="@+id/ImageView01"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
@@ -20,15 +20,38 @@
             android:scaleType="fitStart"
             android:src="@drawable/headerlugar" />
 
-        <TextView
-            android:id="@+id/txtTitleSimple"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:text="Large Text"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="#FF029A8C" />
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:id="@+id/btnHomeDato"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/homeazul" />
+
+            <TextView
+                android:id="@+id/txtTitleSimple"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|center"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FF029A8C" />
+
+            <ImageView
+                android:id="@+id/imgBookmark"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/bookmarkvacio" />
+        </LinearLayout>
     </RelativeLayout>
 
     <TextView
@@ -54,21 +77,6 @@
             android:text="Medium Text"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="#FFB3B3B3" />
-
-        <Button
-            android:id="@+id/btnAgregar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="18dp"
-            android:text="Agregar" />
-
-        <Button
-            android:id="@+id/bttnQuitar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignRight="@+id/btnAgregar"
-            android:text="Quitar" />
     </RelativeLayout>
 
 </LinearLayout>

@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout 
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="@drawable/soslatino"
     android:columnCount="1" >
-
-    <ImageView
-        android:id="@+id/btnSF"
-        android:layout_width="fill_parent"
-        android:layout_height="52dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginBottom="176dp"
-        android:src="@drawable/soslatino05" />
 
     <ImageView
         android:id="@+id/btnLA"
@@ -20,7 +12,17 @@
         android:layout_height="70dp"
         android:layout_above="@+id/btnSF"
         android:layout_alignParentLeft="true"
-        android:layout_marginBottom="109dp"
+        android:layout_marginBottom="129dp"
         android:src="@drawable/soslatino04" />
 
+    <ImageView
+        android:id="@+id/btnSF"
+        android:layout_width="fill_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="147dp"
+        android:src="@drawable/soslatino05" />
+
 </RelativeLayout>
+</LinearLayout>

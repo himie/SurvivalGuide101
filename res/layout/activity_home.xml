@@ -6,17 +6,19 @@
     android:background="@drawable/fondostandard"
     android:orientation="vertical"
     tools:context=".Home" >
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/imgBanner" android:layout_width="match_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" android:clickable="false" android:scaleType="fitStart" android:src="@drawable/headerla"/>
 
+        <ImageView
+            android:id="@+id/imgReturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/returnhome" />
 
-    <ImageView
-        android:id="@+id/imgBanner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="top"
-        android:adjustViewBounds="true"
-        android:clickable="false"
-        android:scaleType="fitStart"
-        android:src="@drawable/headerla" />
+    </RelativeLayout>
 
     <TextView
         android:id="@+id/textView1"
