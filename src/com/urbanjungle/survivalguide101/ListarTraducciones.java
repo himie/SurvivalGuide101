@@ -1,3 +1,26 @@
+/*
+ * American Data Fest 2013
+ * ITESM Chihuahua
+ * Chihuahua, Chihuahua Mexico
+ * November 2013
+ * SOS Latino California Edition
+ * Team: Urban Jungle
+ * 
+ * Designer: 
+ *  Fernanda Gonzalez Jaquez (s.fernandagonzalez@gmail.com)
+ *
+ *Developers:
+ *
+ * Luis Fernando Mata Licón (wisimata@gmail.com)
+ *
+ * Jorge Arturo Alejos Loya (A00758689@itesm.mx)
+ *
+ * Gerardo Anselmo Torres Pérez (chemoatp@gmail.com)
+ *
+ * David Alejandro Jiménez Jaramillo (himie.las@gmail.com)
+ * 
+ */
+
 package com.urbanjungle.survivalguide101;
 
 import java.util.List;
@@ -10,7 +33,10 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import android.widget.ListView;
-
+/*
+ * This class list all the translations from English to Spanish on the database
+ * and shows them in a ListView.
+ */
 public class ListarTraducciones extends Activity {
 
 	@Override
@@ -22,11 +48,13 @@ public class ListarTraducciones extends Activity {
 		ListView listView = (ListView) findViewById(R.id.lstTraducc);
 		RenglonTradAdapter adaptador = new RenglonTradAdapter(this);
 		
+		//This list returns all the translations on the databse
 		List<Traduccion> listaTraducciones = Traduccion.getAll();
 		
 		RenglonTrad row[] = new RenglonTrad[listaTraducciones.size()];
 		int i = 0;
 		
+		//This for populates the array of rows
 		for(Traduccion translate : listaTraducciones){
 			row[i] = new RenglonTrad(translate.ingles, translate.espanol);
 			adaptador.add(row[i]);
@@ -36,6 +64,8 @@ public class ListarTraducciones extends Activity {
 			listView.setDivider(null);
 			listView.setDividerHeight(0);
 			
+			
+			//Here the Home button is implemented
 			ImageView regresar = (ImageView) findViewById(R.id.imgHomeTrad);
 			regresar.setImageResource(R.drawable.homeamarilla);
 			regresar.setClickable(true);

@@ -1,3 +1,26 @@
+/*
+ * American Data Fest 2013
+ * ITESM Chihuahua
+ * Chihuahua, Chihuahua Mexico
+ * November 2013
+ * SOS Latino California Edition
+ * Team: Urban Jungle
+ * 
+ * Designer: 
+ *  Fernanda Gonzalez Jaquez (s.fernandagonzalez@gmail.com)
+ *
+ *Developers:
+ *
+ * Luis Fernando Mata Licón (wisimata@gmail.com)
+ *
+ * Jorge Arturo Alejos Loya (A00758689@itesm.mx)
+ *
+ * Gerardo Anselmo Torres Pérez (chemoatp@gmail.com)
+ *
+ * David Alejandro Jiménez Jaramillo (himie.las@gmail.com)
+ * 
+ */
+
 package com.urbanjungle.survivalguide101;
 
 import java.util.List;
@@ -13,13 +36,17 @@ import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.AdapterView.OnItemClickListener;
-
+/*
+ * This class list all the rights for the imigrants on the database
+ * and shows them in a ListView.
+ */
 public class ListarDerechos extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_home);
+		
 		final String ciudad = getIntent().getStringExtra("Ciudad");
 		
 		ImageView banner = (ImageView) findViewById(R.id.imgBanner);
@@ -31,10 +58,17 @@ public class ListarDerechos extends Activity {
 
 		RenglonAdapter adaptador = new RenglonAdapter(this);
 		
+		//This list returns all the data in the Rights table
 		List<Derechos> listaDerechoss = Derechos.getAll();
+		
+		/*
+		 * For this ListView we use the Item Renglon(Row).
+		 * It's a simple Tittle text with a black background image
+		 */
 		Renglon row[] = new Renglon[listaDerechoss.size()];
 		int i = 0;
 		
+		//In this for we populate the array of rows with the data on the list
 		for(Derechos derecho : listaDerechoss){
 			row[i] = new Renglon(derecho.nombre, "");
 			adaptador.add(row[i]);
@@ -61,6 +95,8 @@ public class ListarDerechos extends Activity {
 			}
 		});
 		
+		
+		//This implements the Home button
 		ImageView regresar = (ImageView) findViewById(R.id.imgReturn);
 		regresar.setImageResource(R.drawable.homeazul);
 		regresar.setClickable(true);

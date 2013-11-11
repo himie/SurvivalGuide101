@@ -1,3 +1,26 @@
+/*
+ * American Data Fest 2013
+ * ITESM Chihuahua
+ * Chihuahua, Chihuahua Mexico
+ * November 2013
+ * SOS Latino California Edition
+ * Team: Urban Jungle
+ * 
+ * Designer: 
+ *  Fernanda Gonzalez Jaquez (s.fernandagonzalez@gmail.com)
+ *
+ *Developers:
+ *
+ * Luis Fernando Mata Licón (wisimata@gmail.com)
+ *
+ * Jorge Arturo Alejos Loya (A00758689@itesm.mx)
+ *
+ * Gerardo Anselmo Torres Pérez (chemoatp@gmail.com)
+ *
+ * David Alejandro Jiménez Jaramillo (himie.las@gmail.com)
+ * 
+ */
+
 package com.urbanjungle.survivalguide101;
 
 import java.util.List;
@@ -13,7 +36,10 @@ import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.AdapterView.OnItemClickListener;
-
+/*
+ * This class list all the home remedies on the database
+ * and shows them in a ListView.
+ */
 public class ListarRemedios extends Activity {
 
 	@Override
@@ -25,16 +51,20 @@ public class ListarRemedios extends Activity {
 		ImageView banner = (ImageView) findViewById(R.id.imgBanner);
 		banner.setImageResource(R.drawable.headerremedios);
 		
-		
 		final ListView listView = (ListView) findViewById(R.id.lstHome);
 		
 
 		RenglonAdapter adaptador = new RenglonAdapter(this);
 		
+		//This list returns all the data of remedies on the database
 		List<Remedio> listaRemedios = Remedio.getAll();
 		Renglon row[] = new Renglon[listaRemedios.size()];
 		int i = 0;
 		
+		/*
+		 * This for populates the data on the row array in order to
+		 * populate the ListView
+		 */
 		for(Remedio remedio : listaRemedios){
 			row[i] = new Renglon(remedio.nombre, "");
 			adaptador.add(row[i]);
@@ -61,6 +91,7 @@ public class ListarRemedios extends Activity {
 			}
 		});
 		
+		//Here we implement the Home button
 		ImageView regresar = (ImageView) findViewById(R.id.imgReturn);
 		regresar.setImageResource(R.drawable.homeazul);
 		regresar.setClickable(true);

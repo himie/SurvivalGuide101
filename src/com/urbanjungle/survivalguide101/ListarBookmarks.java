@@ -1,3 +1,26 @@
+/*
+ * American Data Fest 2013
+ * ITESM Chihuahua
+ * Chihuahua, Chihuahua Mexico
+ * November 2013
+ * SOS Latino California Edition
+ * Team: Urban Jungle
+ * 
+ * Designer: 
+ *  Fernanda Gonzalez Jaquez (s.fernandagonzalez@gmail.com)
+ *
+ *Developers:
+ *
+ * Luis Fernando Mata Licón (wisimata@gmail.com)
+ *
+ * Jorge Arturo Alejos Loya (A00758689@itesm.mx)
+ *
+ * Gerardo Anselmo Torres Pérez (chemoatp@gmail.com)
+ *
+ * David Alejandro Jiménez Jaramillo (himie.las@gmail.com)
+ * 
+ */
+
 package com.urbanjungle.survivalguide101;
 
 import java.util.List;
@@ -14,6 +37,11 @@ import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 
+/*
+ * This class makes the activity in order to present the bookmarks of the user.
+ * It access the database that the user populates interacting with the app
+ * 
+ */
 public class ListarBookmarks extends Activity {
 	
 	RenglonAdapter adaptador;
@@ -30,15 +58,31 @@ public class ListarBookmarks extends Activity {
 		
 		final ListView listView = (ListView) findViewById(R.id.lstHome);
 		
-		final List<Bookmark> listaBookmark = Bookmark.getAll();
+		//This is the list of all the info on the bookmarks table
+		final List<Bookmark> listaBookmark = Bookmark.getAll(); 
 		
 		
 		adaptador = new RenglonAdapter(this);
 		
-		
+		/*
+		 * For this ListView we use the Item Renglon(Row).
+		 * It's a simple Tittle text with a black background image
+		 */
 		Renglon row[] = new Renglon[listaBookmark.size()];
 		int i = 0;
 		
+		/*
+		 * In this for we populate the Row array.
+		 * It has a switch because the user can have different kinds of bookmarks.
+		 * It uses the id_tabla (id_table) that defines what kind of bookmark it is:
+		 * 
+		 * 0 Lugar (Place) That defines Hospitals, NGOs or Consulates
+		 * 1 Remedio (remedy) This defines home remedies
+		 * 2 Derechos (rights) Defines inmigrant US rights
+		 * 
+		 *  Once the object is created, the data is extracted to generate the
+		 *  row elements.
+		 */
 		for(Bookmark bookmark : listaBookmark){
 			switch (bookmark.id_tabla) {
 			case 0:
@@ -66,7 +110,10 @@ public class ListarBookmarks extends Activity {
 		
 		listView.setDivider(null);
 		listView.setDividerHeight(0);
-		
+		/*
+		 * Here we call each activity depending on what kind of bookmark it is,
+		 * the switch is defined just as the past method, and the values are the same.
+		 */
 		listView.setOnItemClickListener(new OnItemClickListener() {
 			@Override
 			public void onItemClick(AdapterView<?> a, View v, int position,
@@ -100,6 +147,8 @@ public class ListarBookmarks extends Activity {
 			}
 		});
 		
+		
+		//Here we define the home button
 		ImageView regresar = (ImageView) findViewById(R.id.imgReturn);
 		regresar.setImageResource(R.drawable.homeamarilla);
 		regresar.setClickable(true);

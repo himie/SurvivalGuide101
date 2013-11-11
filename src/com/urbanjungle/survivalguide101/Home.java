@@ -1,5 +1,8 @@
 /*
  * American Data Fest 2013
+ * ITESM Chihuahua
+ * Chihuahua, Chihuahua Mexico
+ * November 2013
  * SOS Latino California Edition
  * Team: Urban Jungle
  * 
@@ -82,7 +85,7 @@ public class Home extends Activity {
 		RenglonImagen bookmarks = new RenglonImagen("btnbookmarks");
 		arrayOfElementos[4] = bookmarks;
 		
-		//Here we populate the custom adapter for
+		//Here we populate the custom adapter in order to populate the ListView
 		RenglonImagenAdapter adaptador = new RenglonImagenAdapter(this);
 		for (int i = 0; i < arrayOfElementos.length; i++) {
 			adaptador.add(arrayOfElementos[i]);
@@ -101,7 +104,14 @@ public class Home extends Activity {
 					long id) {
 
 				String datosEnviar = "" + id;
-
+				
+				/*
+				 * Here we send basic information to the views of the different data
+				 * "Ciudad" .- Sends informationa about the city we are at the moment (1.- LA, 2.- SF)
+				 * "Type".- Type of data that was requested
+				 * "Nombre".- Sends information to setting Titles and searching on databases
+				 */
+				
 				switch (position) {
 				case 0:
 					Intent Int0 = new Intent(Home.this, Mapas.class);
@@ -136,7 +146,9 @@ public class Home extends Activity {
 
 			}
 		});
-
+		
+		
+		//Return button to the cities activity
 		ImageView regresar = (ImageView) findViewById(R.id.imgReturn);
 		regresar.setClickable(true);
 		regresar.setOnClickListener(new OnClickListener() {

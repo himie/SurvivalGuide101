@@ -1,3 +1,26 @@
+/*
+ * American Data Fest 2013
+ * ITESM Chihuahua
+ * Chihuahua, Chihuahua Mexico
+ * November 2013
+ * SOS Latino California Edition
+ * Team: Urban Jungle
+ * 
+ * Designer: 
+ *  Fernanda Gonzalez Jaquez (s.fernandagonzalez@gmail.com)
+ *
+ *Developers:
+ *
+ * Luis Fernando Mata Licón (wisimata@gmail.com)
+ *
+ * Jorge Arturo Alejos Loya (A00758689@itesm.mx)
+ *
+ * Gerardo Anselmo Torres Pérez (chemoatp@gmail.com)
+ *
+ * David Alejandro Jiménez Jaramillo (himie.las@gmail.com)
+ * 
+ */
+
 package com.urbanjungle.survivalguide101;
 
 import java.util.List;
@@ -13,7 +36,10 @@ import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.AdapterView.OnItemClickListener;
-
+/*
+ * This class list all the places (Hospitals, NGOs, Consulates, by separate) on the database
+ * and shows them in a ListView.
+ */
 public class ListarLugares extends Activity {
 
 	@Override
@@ -60,7 +86,7 @@ public class ListarLugares extends Activity {
 		Renglon row[] = new Renglon[listaLugares.size()];
 		int i = 0;
 		
-		// Here we populate de adapter that is going to print de list view
+		// Here we populate de adapter that is going to print the list view
 		
 		for(Lugar place : listaLugares){
 			row[i] = new Renglon(place.nombre, place.descripcion);
@@ -88,6 +114,8 @@ public class ListarLugares extends Activity {
 			}
 		});
 		
+		
+		//This implements the Home button
 		ImageView regresar = (ImageView) findViewById(R.id.imgReturn);
 		regresar.setImageResource(R.drawable.homeazul);
 		regresar.setClickable(true);
