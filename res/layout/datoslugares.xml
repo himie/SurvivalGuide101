@@ -70,42 +70,46 @@
         android:background="#CC000000" >
 
         <TextView
-            android:id="@+id/txtInfo"
+            android:id="@+id/txtDirecci"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
             android:text="Dirección"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="#FFB3B3B3" />
+            android:textColor="#FFB3B3B3"
+            android:layout_marginRight="10dp"
+        	android:layout_marginLeft="10dp" />
 
         <TextView
             android:id="@+id/txtAddr"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/txtInfo"
-            android:layout_below="@+id/txtInfo"
+            android:layout_alignLeft="@+id/txtDirecci"
+            android:layout_below="@+id/txtDirecci"
             android:layout_marginLeft="22dp"
             android:text="Medium Text"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="#FFB3B3B3" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/txtTelefon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/txtInfo"
+            android:layout_alignLeft="@+id/txtDirecci"
             android:layout_below="@+id/txtAddr"
             android:layout_marginTop="14dp"
             android:text="Telefono"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="#FFB3B3B3" />
+            android:textColor="#FFB3B3B3"
+            android:layout_marginRight="10dp"
+        	android:layout_marginLeft="10dp" />
 
         <TextView
-            android:id="@+id/txtEspecialTitle"
+            android:id="@+id/txtEspecialTi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/textView2"
-            android:layout_below="@+id/textView2"
+            android:layout_alignLeft="@+id/txtTelefon"
+            android:layout_below="@+id/txtTelefon"
             android:layout_marginTop="30dp"
             android:text="Especialidad"
             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -116,7 +120,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignRight="@+id/txtAddr"
-            android:layout_below="@+id/txtEspecialTitle"
+            android:layout_below="@+id/txtEspecialTi"
             android:text="Especialidad"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="#FFB3B3B3" />
@@ -125,7 +129,7 @@
             android:id="@+id/txtTelefono"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/txtEspecialTitle"
+            android:layout_above="@+id/txtEspecialTi"
             android:layout_toRightOf="@+id/txtAddr"
             android:text="Medium Text"
             android:textAppearance="?android:attr/textAppearanceMedium"

@@ -76,7 +76,9 @@
             android:scrollbars="vertical"
             android:text="Medium Text"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="#FFB3B3B3" />
+            android:textColor="#FFB3B3B3"
+            android:layout_marginRight="10dp"
+        	android:layout_marginLeft="10dp" />
     </RelativeLayout>
 
 </LinearLayout>
