@@ -5,6 +5,10 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.widget.TextView;
 
+/*
+ * This class defines and draw the different kind of maps, but the MapOffline.
+ * It draws public transport maps and risk zones maps.
+ */
 
 public class VerMapa extends Activity {
     /** Called when the activity is first created. */

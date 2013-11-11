@@ -35,6 +35,10 @@ import com.activeandroid.query.Select;
  * This ORM lets us use the data on the databases just like if they were objects 
  * of Java.
  * 
+ * The object of Bookmark, has:
+ * Id_bookmark.- The id of the object that has been bookmarked
+ * Id_table.- The table which the bookmark comes from
+ * 
  * This class makes the object of Bookmarks, from the table of the same name using the ORM
  */
 @Table(name = "Bookmarks")

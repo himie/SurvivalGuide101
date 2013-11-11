@@ -32,6 +32,12 @@ import com.activeandroid.query.Select;
 
 /*
  * This class makes the object of Derechos (Rights) based on the table Leyes (Law) using the ORM
+ * 
+ * The rights object has this parameters:
+ * Nombre (Name).- Sets the name of the right
+ * Descripcion (Description).- Has all the detailed info about the current right
+ * 
+ * 
  */
 @Table(name = "Leyes")
 public class Derechos extends Model {
