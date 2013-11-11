@@ -51,6 +51,8 @@ public class ListarBookmarks extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_home);
+		final String ciudad = getIntent().getStringExtra("Ciudad");
+		int ciutat = Integer.parseInt(ciudad);
 		
 		
 		ImageView banner = (ImageView) findViewById(R.id.imgBanner);
@@ -132,12 +134,14 @@ public class ListarBookmarks extends Activity {
 					Remedio object = Remedio.getById(eleccion.id_bookmark);
 					Intent Int2 = new Intent(ListarBookmarks.this, VerRemedio.class);
 					Int2.putExtra("Titulo", object.nombre);
+					Int2.putExtra("Ciudad", "" + ciudad);
 					startActivity(Int2);
 					break;
 				case 2:
 					Intent Int3 = new Intent(ListarBookmarks.this, VerDerecho.class);
 					Derechos objecte = Derechos.getById(eleccion.id_bookmark);
 					Int3.putExtra("Titulo", objecte.nombre);
+					Int3.putExtra("Ciudad", "" + ciudad);
 					startActivity(Int3);
 					break;
 				default:
