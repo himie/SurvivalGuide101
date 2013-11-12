@@ -6,19 +6,6 @@
  * SOS Latino California Edition
  * Team: Urban Jungle
  * 
- * Designer: 
- *  Fernanda Gonzalez Jaquez (s.fernandagonzalez@gmail.com)
- *
- *Developers:
- *
- * Luis Fernando Mata Licón (wisimata@gmail.com)
- *
- * Jorge Arturo Alejos Loya (A00758689@itesm.mx)
- *
- * Gerardo Anselmo Torres Pérez (chemoatp@gmail.com)
- *
- * David Alejandro Jiménez Jaramillo (himie.las@gmail.com)
- * 
  */
 
 package com.urbanjungle.survivalguide101;
@@ -52,7 +39,7 @@ public class ListarBookmarks extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_home);
 		final String ciudad = getIntent().getStringExtra("Ciudad");
-		int ciutat = Integer.parseInt(ciudad);
+		final int ciutat = Integer.parseInt(ciudad);
 		
 		
 		ImageView banner = (ImageView) findViewById(R.id.imgBanner);
@@ -66,10 +53,7 @@ public class ListarBookmarks extends Activity {
 		
 		adaptador = new RenglonAdapter(this);
 		
-		/*
-		 * For this ListView we use the Item Renglon(Row).
-		 * It's a simple Tittle text with a black background image
-		 */
+		//For this ListView we use the Item Renglon(Row).
 		Renglon row[] = new Renglon[listaBookmark.size()];
 		int i = 0;
 		
@@ -134,14 +118,14 @@ public class ListarBookmarks extends Activity {
 					Remedio object = Remedio.getById(eleccion.id_bookmark);
 					Intent Int2 = new Intent(ListarBookmarks.this, VerRemedio.class);
 					Int2.putExtra("Titulo", object.nombre);
-					Int2.putExtra("Ciudad", "" + ciudad);
+					Int2.putExtra("Ciudad", "" + ciutat);
 					startActivity(Int2);
 					break;
 				case 2:
 					Intent Int3 = new Intent(ListarBookmarks.this, VerDerecho.class);
 					Derechos objecte = Derechos.getById(eleccion.id_bookmark);
 					Int3.putExtra("Titulo", objecte.nombre);
-					Int3.putExtra("Ciudad", "" + ciudad);
+					Int3.putExtra("Ciudad", "" + ciutat);
 					startActivity(Int3);
 					break;
 				default:

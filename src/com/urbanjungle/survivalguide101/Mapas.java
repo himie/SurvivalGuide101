@@ -6,19 +6,6 @@
  * SOS Latino California Edition
  * Team: Urban Jungle
  * 
- * Designer: 
- *  Fernanda Gonzalez Jaquez (s.fernandagonzalez@gmail.com)
- *
- *Developers:
- *
- * Luis Fernando Mata Licón (wisimata@gmail.com)
- *
- * Jorge Arturo Alejos Loya (A00758689@itesm.mx)
- *
- * Gerardo Anselmo Torres Pérez (chemoatp@gmail.com)
- *
- * David Alejandro Jiménez Jaramillo (himie.las@gmail.com)
- * 
  */
 package com.urbanjungle.survivalguide101;
 
@@ -58,6 +45,7 @@ public class Mapas extends Activity {
 		RenglonImagen metro = new RenglonImagen("btnmetro");
 		arrayOfElementos[1] = metro;
 		RenglonImagen mapa;
+		//This assigns the buttons depending on the chosen city
 		switch (ciutat) {
 		case 1:
 			mapa = new RenglonImagen("btnmapala");
@@ -70,9 +58,15 @@ public class Mapas extends Activity {
 			break;
 		}
 		arrayOfElementos[2] = mapa;
+		
+		/*
+		 * We use the object RenglonImagen to fill the items of the list view.
+		 * This is a simple item that is only an image
+		 */
 		RenglonImagen peligroso = new RenglonImagen("btnzonasconflic");
 		arrayOfElementos[3] = peligroso;
-
+		
+		//Here we populate the array of items for the list adapter
 		RenglonImagenAdapter adaptador = new RenglonImagenAdapter(this);
 		for(int i = 0; i < arrayOfElementos.length; i++){
 			adaptador.add(arrayOfElementos[i]);
@@ -126,6 +120,7 @@ public class Mapas extends Activity {
 			}
 		});
 		 
+		 //Here we implement the return button
 		 ImageView regresar = (ImageView) findViewById(R.id.imgReturn);
 			regresar.setImageResource(R.drawable.homeamarilla);
 			regresar.setClickable(true);

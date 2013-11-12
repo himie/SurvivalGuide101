@@ -1,3 +1,25 @@
+/*
+ * American Data Fest 2013
+ * ITESM Chihuahua
+ * Chihuahua, Chihuahua Mexico
+ * November 2013
+ * SOS Latino California Edition
+ * Team: Urban Jungle
+ * 
+ * Designer: 
+ *  Fernanda Gonzalez Jaquez (s.fernandagonzalez@gmail.com)
+ *
+ *Developers:
+ *
+ * Luis Fernando Mata Licón (wisimata@gmail.com)
+ *
+ * Jorge Arturo Alejos Loya (A00758689@itesm.mx)
+ *
+ * Gerardo Anselmo Torres Pérez (chemoatp@gmail.com)
+ *
+ * David Alejandro Jiménez Jaramillo (himie.las@gmail.com)
+ * 
+ */
 package com.urbanjungle.survivalguide101;
 
 import android.content.Context;
@@ -7,6 +29,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
+/*
+ * This is a custom adapter for the Renglon (Row) item
+ */
 
 public class RenglonAdapter extends ArrayAdapter<Object> {
 	// View lookup cache
@@ -42,7 +67,6 @@ public class RenglonAdapter extends ArrayAdapter<Object> {
 		Typeface font = Typeface.createFromAsset(cxt.getAssets(), "futura.ttc");  
 		viewHolder.principal.setTypeface(font);
 		// Populate the data into the template view using the data object
-		//viewHolder.principal.setTypeface(Typeface.createFromAsset(view.getContext().getAssets(), "missiongothicregular.otf"));
 		viewHolder.principal.setText(item.titulo);
 		// Return the completed view to render on screen
 		return convertView;

@@ -1,3 +1,13 @@
+/*
+ * American Data Fest 2013
+ * ITESM Chihuahua
+ * Chihuahua, Chihuahua Mexico
+ * November 2013
+ * SOS Latino California Edition
+ * Team: Urban Jungle
+ * 
+ */
+
 package com.urbanjungle.survivalguide101;
 
 import com.activeandroid.Model;
@@ -8,6 +18,17 @@ import com.activeandroid.annotation.Column;
 import com.activeandroid.annotation.Table;
 import com.activeandroid.query.Select;
 
+/* 
+ * This class makes the object of Remedio (Remedy), 
+ * from the table of the same name using the ORM.
+ * 
+ * This is a home remedy.
+ * 
+ * A Lugar has this parameters:
+ * Nombre (Name)
+ * Descripcion (Description)
+ * 
+ */
 
 @Table(name = "Remedios")
 public class Remedio extends Model {

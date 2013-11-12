@@ -6,19 +6,6 @@
  * SOS Latino California Edition
  * Team: Urban Jungle
  * 
- * Designer: 
- *  Fernanda Gonzalez Jaquez (s.fernandagonzalez@gmail.com)
- *
- *Developers:
- *
- * Luis Fernando Mata Licón (wisimata@gmail.com)
- *
- * Jorge Arturo Alejos Loya (A00758689@itesm.mx)
- *
- * Gerardo Anselmo Torres Pérez (chemoatp@gmail.com)
- *
- * David Alejandro Jiménez Jaramillo (himie.las@gmail.com)
- * 
  */
 package com.urbanjungle.survivalguide101;
 
