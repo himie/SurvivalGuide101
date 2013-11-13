@@ -138,6 +138,7 @@ public class Home extends Activity {
 					break;
 				case 4:
 					Intent Int4 = new Intent(Home.this, ListarBookmarks.class);
+					Int4.putExtra("Ciudad", ciudad);
 					startActivity(Int4);
 					break;
 				default:

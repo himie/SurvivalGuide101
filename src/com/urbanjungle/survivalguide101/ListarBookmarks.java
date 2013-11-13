@@ -111,7 +111,7 @@ public class ListarBookmarks extends Activity {
 					Lugar objeto = Lugar.getById(eleccion.id_bookmark);
 					Intent Int = new Intent(ListarBookmarks.this, VerLugar.class);
 					Int.putExtra("Titulo", objeto.nombre);
-					Int.putExtra("Ciudad", "" + objeto.ciudad);
+					Int.putExtra("Ciudad", "" + ciutat);
 					startActivity(Int);
 					break;
 				case 1:
